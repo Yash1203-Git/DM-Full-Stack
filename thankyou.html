@@ -3,90 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You for Your NatureBloom Organics Purchase!</title>
-    <meta name="description" content="Thank you for choosing NatureBloom Organics! Your order is confirmed. We appreciate your support for natural and organic skincare and look forward to you experiencing the difference.">
-    <meta name="keywords" content="thank you for order, NatureBloom Organics purchase, order confirmation, natural skincare, organic beauty, thank you page, sustainable beauty">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NatureBloom Organics - Thank You for Your Purchase!</title>
+    <meta name="description" content="Thank you for your NatureBloom Organics purchase! Your order is confirmed. Explore more organic skincare or connect with us.">
+    <meta name="keywords" content="thank you, order confirmation, organic skincare purchase, NatureBloom order, natural beauty, skincare delivery">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            color: #333;
             background-color: #fdfaf6; /* Light cream background */
+            color: #333;
         }
-        .logo-font {
-            font-family: 'Playfair Display', serif;
+        .header-bg {
+            background-color: #e0f2f7; /* Light blue-green */
+        }
+        .footer-bg {
+            background-color: #a7d9d0; /* Muted teal */
         }
         .btn-primary {
-            @apply inline-block px-8 py-3 bg-green-700 text-white font-semibold rounded-full shadow-lg hover:bg-green-800 transition duration-300 ease-in-out transform hover:scale-105;
+            background-color: #81c784; /* Soft green */
+            color: white;
+            transition: background-color 0.3s ease;
         }
-        .section-heading {
-            @apply text-3xl md:text-4xl font-bold text-green-800 mb-6 text-center;
+        .btn-primary:hover {
+            background-color: #66bb6a; /* Darker green on hover */
+        }
+        .text-brand-primary {
+            color: #4caf50; /* Nature green */
+        }
+        .font-logo {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-bg-light {
+            background-color: #ffffff; /* White for sections */
+        }
+        .rounded-xl {
+            border-radius: 1rem; /* More pronounced rounded corners */
         }
     </style>
 </head>
-<body id="body-thankyou" class="flex flex-col min-h-screen">
-
-    <!-- Header Section -->
-    <header id="header-main" class="bg-white shadow-sm py-4 md:py-6 sticky top-0 z-50">
-        <div id="header-container" class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <!-- Logo -->
-            <div id="brand-logo" class="text-3xl font-bold text-green-700 logo-font mb-4 md:mb-0">
-                NatureBloom Organics
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header id="main-header" class="header-bg shadow-md py-4 px-6 md:px-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div id="brand-logo" class="text-3xl md:text-4xl font-bold text-brand-primary font-logo mb-4 md:mb-0">
+                <a href="index.html" class="hover:text-green-700 transition-colors duration-300">NatureBloom Organics</a>
             </div>
-            <!-- Navigation -->
             <nav id="main-nav">
-                <ul id="nav-list" class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg">
-                    <li id="nav-item-home"><a href="index.html" class="text-green-600 hover:text-green-800 font-medium transition duration-200 ease-in-out">Home</a></li>
-                    <li id="nav-item-products"><a href="products.html" class="text-green-600 hover:text-green-800 font-medium transition duration-200 ease-in-out">Products</a></li>
-                    <li id="nav-item-contact"><a href="contact.html" class="text-green-600 hover:text-green-800 font-medium transition duration-200 ease-in-out">Contact</a></li>
+                <ul class="flex space-x-6 md:space-x-8 text-lg font-medium">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="products.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Products</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main id="main-content" class="flex-grow py-16 md:py-24 flex items-center justify-center">
-        <section id="thankyou-section" class="bg-white p-8 md:p-12 rounded-xl shadow-lg text-center max-w-2xl mx-4">
-            <h1 id="thankyou-heading" class="section-heading text-green-700 mb-6">Thank You for Your Purchase!</h1>
-            <p id="thankyou-message-1" class="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
-                Your order with NatureBloom Organics has been successfully placed. We are thrilled you chose to embark on a journey of natural radiance with our pure, plant-powered skincare. Every product you've selected is crafted with care and a deep respect for both your skin and the environment. We truly appreciate your support for sustainable and ethical beauty.
+    <!-- Main Content - Thank You Page -->
+    <main id="thankyou-content" class="flex-grow container mx-auto px-6 py-12 md:py-16 flex items-center justify-center">
+        <section id="thankyou-section" class="section-bg-light p-8 md:p-12 rounded-xl shadow-lg text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Thank You for Your NatureBloom Purchase!</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+                Your order is placed and being processed. We are happy you chose NatureBloom Organics!
             </p>
-            <p id="thankyou-message-2" class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                You will receive an order confirmation email shortly with all the details, including your order number and estimated delivery date. Please keep an eye on your inbox (and spam folder!) for updates. We're already preparing your package with love and can't wait for you to experience the NatureBloom difference. Get ready to unveil your most vibrant and healthy skin yet!
+            <div id="order-details-mock" class="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-200">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Order Details:</h2>
+                <p class="text-lg text-gray-700 mb-2"><strong>Order ID:</strong> #NB-2025-ABCD12345</p>
+                <p class="text-lg text-gray-700 mb-2"><strong>Estimated Delivery:</strong> 5-7 business days</p>
+                <p class="text-lg text-gray-700">You will get an email soon with tracking info.</p>
+            </div>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+                We hope you love your new organic skincare. Enjoy the natural glow they bring.
+                Your support helps us offer pure, gentle, and effective products.
             </p>
-            <p id="thankyou-message-3" class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-                In the meantime, feel free to explore more of our collection or connect with us on social media to stay updated on new products and skincare tips. We are constantly innovating to bring you the best of nature's bounty for your skincare needs. Your satisfaction is our top priority, and we are here to support you every step of the way.
-            </p>
-            <div id="thankyou-cta-buttons" class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="products.html" id="explore-more-button" class="btn-primary">
-                    Explore More Products
+            <div id="thankyou-cta" class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="products.html" id="continue-shopping-btn" class="btn-primary px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    Continue Shopping
                 </a>
-                <a href="index.html" id="back-to-home-button" class="btn-primary bg-green-600 hover:bg-green-700">
-                    Back to Home
+                <a href="contact.html" id="contact-support-btn" class="bg-white border border-brand-primary text-brand-primary px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                    Contact Support
                 </a>
             </div>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer id="footer-main" class="bg-green-800 text-white py-8 mt-12 rounded-t-lg shadow-lg">
-        <div id="footer-container" class="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
-            <div id="footer-copyright" class="mb-4 md:mb-0">
-                <p>&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+    <!-- Footer -->
+    <footer id="main-footer" class="footer-bg py-8 px-6 md:px-12 text-center text-gray-700">
+        <div class="container mx-auto">
+            <p id="copyright-info" class="mb-4">&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <div id="footer-links" class="flex justify-center space-x-6 mb-4">
+                <a href="index.html" class="hover:text-brand-primary transition-colors duration-300">Home</a>
+                <a href="products.html" class="hover:text-brand-primary transition-colors duration-300">Products</a>
+                <a href="contact.html" class="hover:text-brand-primary transition-colors duration-300">Contact</a>
+                <a href="https://www.ewg.org/skindeep/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition-colors duration-300">EWG Skin Deep</a>
             </div>
-            <div id="footer-links">
-                <ul id="footer-nav-list" class="flex justify-center space-x-6">
-                    <li><a href="index.html" class="hover:text-green-200 transition duration-200 ease-in-out">Home</a></li>
-                    <li><a href="products.html" class="hover:text-green-200 transition duration-200 ease-in-out">Products</a></li>
-                    <li><a href="contact.html" class="hover:text-green-200 transition duration-200 ease-in-out">Contact</a></li>
-                    <!-- External link example -->
-                    <li><a href="https://www.skincancer.org/" target="_blank" rel="noopener noreferrer" class="hover:text-green-200 transition duration-200 ease-in-out">Learn About Skin Health</a></li>
-                </ul>
-            </div>
+            <p id="social-media-prompt" class="text-sm text-gray-600">Follow us on social media for tips and updates!</p>
         </div>
     </footer>
-
 </body>
 </html>
