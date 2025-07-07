@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureBloom Organics - Secure Payment</title>
+    <meta name="description" content="Proceed to secure payment for your NatureBloom Organics purchase. Fast, safe, and easy checkout for natural skincare.">
+    <meta name="keywords" content="secure payment, checkout, organic skincare payment, NatureBloom buy, online payment">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfaf6; /* Light cream background */
+            color: #333;
+        }
+        .header-bg {
+            background-color: #e0f2f7; /* Light blue-green */
+        }
+        .footer-bg {
+            background-color: #a7d9d0; /* Muted teal */
+        }
+        .btn-primary {
+            background-color: #81c784; /* Soft green */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #66bb6a; /* Darker green on hover */
+        }
+        .text-brand-primary {
+            color: #4caf50; /* Nature green */
+        }
+        .font-logo {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-bg-light {
+            background-color: #ffffff; /* White for sections */
+        }
+        .rounded-xl {
+            border-radius: 1rem; /* More pronounced rounded corners */
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header id="main-header" class="header-bg shadow-md py-4 px-6 md:px-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div id="brand-logo" class="text-3xl md:text-4xl font-bold text-brand-primary font-logo mb-4 md:mb-0">
+                <a href="index.html" class="hover:text-green-700 transition-colors duration-300">NatureBloom Organics</a>
+            </div>
+            <nav id="main-nav">
+                <ul class="flex space-x-6 md:space-x-8 text-lg font-medium">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="products.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Products</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Payment Page -->
+    <main id="payment-content" class="flex-grow container mx-auto px-6 py-12 md:py-16 flex items-center justify-center">
+        <section id="payment-section" class="section-bg-light p-8 md:p-12 rounded-xl shadow-lg text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Secure Checkout</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">
+                You're one step closer to experiencing the natural goodness of NatureBloom Organics!
+                Please proceed with your payment details below.
+            </p>
+            <div id="payment-mock-form" class="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-200">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Payment Information (Mockup)</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    This is a placeholder for a secure payment gateway. In a real application, you would integrate with a payment processor like Stripe or PayPal here.
+                </p>
+                <div class="space-y-4 text-left">
+                    <div>
+                        <label for="card-number" class="block text-gray-700 text-lg font-medium mb-2">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="expiry-date" class="block text-gray-700 text-lg font-medium mb-2">Expiry Date</label>
+                            <input type="text" id="expiry-date" name="expiry-date" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" placeholder="MM/YY" required>
+                        </div>
+                        <div>
+                            <label for="cvv" class="block text-gray-700 text-lg font-medium mb-2">CVV</label>
+                            <input type="text" id="cvv" name="cvv" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary" placeholder="XXX" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="thankyou.html" id="complete-purchase-btn" class="btn-primary inline-block px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Complete Purchase
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="footer-bg py-8 px-6 md:px-12 text-center text-gray-700">
+        <div class="container mx-auto">
+            <p id="copyright-info" class="mb-4">&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <div id="footer-links" class="flex justify-center space-x-6 mb-4">
+                <a href="index.html" class="hover:text-brand-primary transition-colors duration-300">Home</a>
+                <a href="products.html" class="hover:text-brand-primary transition-colors duration-300">Products</a>
+                <a href="contact.html" class="hover:text-brand-primary transition-colors duration-300">Contact</a>
+                <a href="https://www.ewg.org/skindeep/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition-colors duration-300">EWG Skin Deep</a>
+            </div>
+            <p id="social-media-prompt" class="text-sm text-gray-600">Follow us on social media for tips and updates!</p>
+        </div>
+    </footer>
+</body>
+</html>
