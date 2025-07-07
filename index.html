@@ -3,157 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NatureBloom Organics - Natural Skincare for Radiant Youth</title>
-    <meta name="description" content="Discover NatureBloom Organics, your destination for organic, gentle skincare designed for young, vibrant skin. Embrace natural beauty with our ethically sourced products.">
-    <meta name="keywords" content="organic skincare, natural beauty, young skin, radiant glow, sustainable, eco-friendly, NatureBloom Organics, plant-based, gentle skincare">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NatureBloom Organics - Organic Skincare for Youthful Radiance</title>
+    <meta name="description" content="Discover NatureBloom Organics, your go-to for gentle, effective organic skincare designed for ages 16-30. Achieve healthy, glowing skin naturally.">
+    <meta name="keywords" content="organic skincare, natural skincare, teen skincare, gentle skincare, eco-friendly skincare, plant-based skincare, sensitive skin, acne-prone skin, youthful skin, glowing skin">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom font for the logo - Inter is a good default, but you could link a custom one */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            color: #333;
             background-color: #fdfaf6; /* Light cream background */
+            color: #333;
         }
-        .logo-font {
-            font-family: 'Playfair Display', serif; /* A more elegant font for the logo */
+        .header-bg {
+            background-color: #e0f2f7; /* Light blue-green */
+        }
+        .footer-bg {
+            background-color: #a7d9d0; /* Muted teal */
         }
         .btn-primary {
-            @apply inline-block px-8 py-3 bg-green-700 text-white font-semibold rounded-full shadow-lg hover:bg-green-800 transition duration-300 ease-in-out transform hover:scale-105;
+            background-color: #81c784; /* Soft green */
+            color: white;
+            transition: background-color 0.3s ease;
         }
-        .section-heading {
-            @apply text-3xl md:text-4xl font-bold text-green-800 mb-6 text-center;
+        .btn-primary:hover {
+            background-color: #66bb6a; /* Darker green on hover */
         }
-        .sub-heading {
-            @apply text-xl md:text-2xl font-semibold text-green-700 mb-4;
+        .text-brand-primary {
+            color: #4caf50; /* Nature green */
+        }
+        .font-logo {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-bg-light {
+            background-color: #ffffff; /* White for sections */
+        }
+        .rounded-xl {
+            border-radius: 1rem; /* More pronounced rounded corners */
         }
     </style>
 </head>
-<body id="body-home" class="flex flex-col min-h-screen">
-
-    <!-- Header Section -->
-    <header id="header-main" class="bg-white shadow-sm py-4 md:py-6 sticky top-0 z-50">
-        <div id="header-container" class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <!-- Logo -->
-            <div id="brand-logo" class="text-3xl font-bold text-green-700 logo-font mb-4 md:mb-0">
-                NatureBloom Organics
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header id="main-header" class="header-bg shadow-md py-4 px-6 md:px-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div id="brand-logo" class="text-3xl md:text-4xl font-bold text-brand-primary font-logo mb-4 md:mb-0">
+                <a href="index.html" class="hover:text-green-700 transition-colors duration-300">NatureBloom Organics</a>
             </div>
-            <!-- Navigation -->
             <nav id="main-nav">
-                <ul id="nav-list" class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg">
-                    <li id="nav-item-home"><a href="index.html" class="text-green-600 hover:text-green-800 font-medium transition duration-200 ease-in-out">Home</a></li>
-                    <li id="nav-item-products"><a href="products.html" class="text-green-600 hover:text-green-800 font-medium transition duration-200 ease-in-out">Products</a></li>
-                    <li id="nav-item-contact"><a href="contact.html" class="text-green-600 hover:text-green-800 font-medium transition duration-200 ease-in-out">Contact</a></li>
+                <ul class="flex space-x-6 md:space-x-8 text-lg font-medium">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Home</a></li>
+                    <li><a href="products.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Products</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-brand-primary transition-colors duration-300">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main id="main-content" class="flex-grow">
-        <!-- Hero Section -->
-        <section id="hero-section" class="bg-gradient-to-r from-green-100 to-lime-100 py-16 md:py-24 text-center rounded-b-lg shadow-md mx-4 mt-8">
-            <div id="hero-content" class="container mx-auto px-4">
-                <h1 id="hero-heading" class="text-4xl md:text-6xl font-bold text-green-900 mb-6 leading-tight logo-font">
-                    Unveil Your Natural Radiance with NatureBloom Organics
-                </h1>
-                <p id="hero-tagline" class="text-lg md:text-xl text-green-800 mb-8 max-w-3xl mx-auto">
-                    Pure, potent, and plant-powered skincare crafted for the vibrant energy of young skin (ages 16-30).
-                    Discover the secret to a healthy, glowing complexion, naturally.
-                </p>
-                <a href="products.html" id="hero-cta-button" class="btn-primary">
-                    Explore Our Products
-                </a>
-            </div>
+    <!-- Main Content - Home Page -->
+    <main id="home-content" class="flex-grow container mx-auto px-6 py-12 md:py-16">
+        <section id="hero-section" class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                Get Your Natural Glow with <span class="text-brand-primary">NatureBloom Organics</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Discover nature's power for healthy, vibrant skin. Our organic skincare is made with care.
+                It uses pure ingredients and respects the planet. Perfect for young, sensitive skin.
+            </p>
+            <a href="products.html" id="explore-products-btn" class="btn-primary inline-block px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                Explore Our Products
+            </a>
         </section>
 
-        <!-- About Us Section -->
-        <section id="about-us-section" class="py-16 md:py-20 bg-white mx-4 mt-8 rounded-lg shadow-md">
-            <div id="about-us-container" class="container mx-auto px-4">
-                <h2 id="about-us-heading" class="section-heading">Our Philosophy: Nature's Best for Your Skin</h2>
-                <div id="about-us-grid" class="flex flex-col md:flex-row items-center md:space-x-12">
-                    <div id="about-us-text" class="md:w-1/2 mb-8 md:mb-0">
-                        <p id="about-us-paragraph-1" class="text-md md:text-lg text-gray-700 leading-relaxed mb-6">
-                            At NatureBloom Organics, we believe that true beauty stems from nature. Our journey began with a simple yet profound idea: to create skincare that is as pure and honest as the earth itself. We meticulously select the finest organic ingredients, harnessing their inherent power to nourish, protect, and revitalize your skin. Our formulations are free from harsh chemicals, synthetic fragrances, and artificial colors, ensuring a gentle touch that respects your skin's natural balance. We understand the unique needs of young, active skin, which is why our products are specifically designed to address concerns like breakouts, oiliness, and maintaining a fresh, vibrant glow, all while being kind to the planet.
-                        </p>
-                        <p id="about-us-paragraph-2" class="text-md md:text-lg text-gray-700 leading-relaxed">
-                            We are committed to sustainability, from ethically sourcing our ingredients to using eco-friendly packaging. Every product you purchase from NatureBloom Organics supports a healthier you and a healthier planet. Our mission extends beyond just skincare; it's about fostering a community that values conscious living and celebrates natural beauty in all its forms. Join us in embracing a skincare routine that feels good, does good, and looks absolutely radiant. We invite you to experience the difference that truly organic, thoughtfully crafted skincare can make.
-                        </p>
-                    </div>
-                    <div id="about-us-image-wrapper" class="md:w-1/2 flex justify-center">
-                        <img id="about-us-image" src="https://placehold.co/600x400/a3e635/ffffff?text=Pure+Ingredients" alt="Close-up of fresh organic ingredients like herbs and flowers" title="NatureBloom Organics - Pure Ingredients" class="rounded-xl shadow-lg w-full max-w-md object-cover">
-                    </div>
+        <section id="about-us-section" class="section-bg-light p-8 md:p-12 rounded-xl shadow-lg mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">Our Belief: Pure, Gentle, Effective</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div id="about-text-column">
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                        At NatureBloom Organics, we believe true beauty comes from nature. We love making skincare that works well
+                        and is very gentle. This is especially true for the delicate skin of those aged 16 to 30.
+                        We use only organic, plant-based ingredients. This means you feed your skin without harsh chemicals.
+                        We carefully find every part, making sure it is pure and good for the Earth.
+                    </p>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Our products help you get clear, bright skin. They keep your skin's natural balance.
+                        From soft cleansers to hydrating serums, each item shows our care for health and the environment.
+                        Join us for healthier skin and a happier planet. We are here to help your skin look its natural best.
+                        Enjoy a pleasant and effective skincare routine.
+                    </p>
+                </div>
+                <div id="about-image-column" class="flex justify-center items-center">
+                    <img src="https://placehold.co/600x400/b2dfdb/333333?text=Nature's+Touch" alt="Close-up of a hand gently touching a plant, symbolizing natural skincare" title="Nature's Gentle Touch in Skincare" class="rounded-xl shadow-md max-w-full h-auto">
                 </div>
             </div>
         </section>
 
-        <!-- Why Choose Us Section -->
-        <section id="why-choose-us-section" class="py-16 md:py-20 bg-lime-50 mx-4 mt-8 rounded-lg shadow-md">
-            <div id="why-choose-us-container" class="container mx-auto px-4">
-                <h2 id="why-choose-us-heading" class="section-heading">Why Choose NatureBloom Organics?</h2>
-                <div id="why-choose-us-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div id="reason-1" class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                        <h3 id="reason-1-heading" class="sub-heading">Ethically Sourced Ingredients</h3>
-                        <p id="reason-1-text" class="text-gray-600">
-                            We partner with farms that practice sustainable agriculture, ensuring every ingredient is not only potent but also responsibly harvested. Our commitment to ethical sourcing means you can trust the purity and origin of everything that touches your skin. We believe in transparency and traceability, providing you with peace of mind.
-                        </p>
-                    </div>
-                    <div id="reason-2" class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                        <h3 id="reason-2-heading" class="sub-heading">Formulated for Young Skin</h3>
-                        <p id="reason-2-text" class="text-gray-600">
-                            Our products are specifically designed to cater to the unique needs of skin aged 16-30, addressing common concerns like oil balance, breakouts, and maintaining a fresh, youthful glow. We focus on gentle yet effective solutions that support your skin's natural vitality without harsh chemicals.
-                        </p>
-                    </div>
-                    <div id="reason-3" class="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition duration-300">
-                        <h3 id="reason-3-heading" class="sub-heading">Eco-Friendly & Sustainable</h3>
-                        <p id="reason-3-text" class="text-gray-600">
-                            From our biodegradable packaging to our cruelty-free practices, we are dedicated to minimizing our environmental footprint. Choosing NatureBloom Organics means making a positive impact on the planet while caring for your skin. We strive for a future where beauty and sustainability go hand in hand.
-                        </p>
-                    </div>
+        <section id="why-choose-us-section" class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Why Pick NatureBloom Organics?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div id="benefit-1" class="section-bg-light p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-brand-primary mb-3">Pure Ingredients</h3>
+                    <p class="text-gray-700 text-base">
+                        We use only USDA-certified organic ingredients. No parabens, sulfates, or fake smells.
+                        Your skin deserves the best, straight from nature.
+                    </p>
+                </div>
+                <div id="benefit-2" class="section-bg-light p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-brand-primary mb-3">For Young Skin</h3>
+                    <p class="text-gray-700 text-base">
+                        Our products are made for young adult skin. They help balance, clear, and hydrate without bother.
+                    </p>
+                </div>
+                <div id="benefit-3" class="section-bg-light p-6 rounded-xl shadow-md">
+                    <h3 class="text-2xl font-semibold text-brand-primary mb-3">Green Choices</h3>
+                    <p class="text-gray-700 text-base">
+                        We use eco-friendly packaging and fair sourcing. Our goal is to help the planet and your skin.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials-section" class="py-16 md:py-20 bg-white mx-4 mt-8 rounded-lg shadow-md">
-            <div id="testimonials-container" class="container mx-auto px-4">
-                <h2 id="testimonials-heading" class="section-heading">What Our Customers Say</h2>
-                <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div id="testimonial-1" class="p-6 bg-lime-50 rounded-lg shadow-sm">
-                        <p id="testimonial-1-text" class="italic text-gray-700 mb-4">
-                            "NatureBloom Organics has transformed my skin! I used to struggle with breakouts, but after using their cleanser and moisturizer, my skin feels so much clearer and healthier. Plus, I love that it's all natural. Highly recommend for anyone with sensitive skin!"
-                        </p>
-                        <p id="testimonial-1-author" class="font-semibold text-green-700">- Sarah L., 22</p>
-                    </div>
-                    <div id="testimonial-2" class="p-6 bg-lime-50 rounded-lg shadow-sm">
-                        <p id="testimonial-2-text" class="italic text-gray-700 mb-4">
-                            "I've been searching for an organic brand that actually works, and I finally found it! The Pure Radiance Serum gave my skin such a beautiful glow. It feels light, smells amazing, and I've noticed a real difference in my skin's texture. So happy with my purchase!"
-                        </p>
-                        <p id="testimonial-2-author" class="font-semibold text-green-700">- Alex M., 25</p>
-                    </div>
-                </div>
-            </div>
+        <section id="cta-products-section" class="text-center section-bg-light p-8 md:p-12 rounded-xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Ready for Better Skin?</h2>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                See all our organic skincare products. Find what's right for your skin's natural beauty journey.
+                Each product helps you become healthier and more radiant.
+            </p>
+            <a href="products.html" id="view-all-products-btn" class="btn-primary inline-block px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                View All Products
+            </a>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer id="footer-main" class="bg-green-800 text-white py-8 mt-12 rounded-t-lg shadow-lg">
-        <div id="footer-container" class="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
-            <div id="footer-copyright" class="mb-4 md:mb-0">
-                <p>&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+    <!-- Footer -->
+    <footer id="main-footer" class="footer-bg py-8 px-6 md:px-12 text-center text-gray-700">
+        <div class="container mx-auto">
+            <p id="copyright-info" class="mb-4">&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <div id="footer-links" class="flex justify-center space-x-6 mb-4">
+                <a href="index.html" class="hover:text-brand-primary transition-colors duration-300">Home</a>
+                <a href="products.html" class="hover:text-brand-primary transition-colors duration-300">Products</a>
+                <a href="contact.html" class="hover:text-brand-primary transition-colors duration-300">Contact</a>
+                <a href="https://www.ewg.org/skindeep/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition-colors duration-300">EWG Skin Deep</a>
             </div>
-            <div id="footer-links">
-                <ul id="footer-nav-list" class="flex justify-center space-x-6">
-                    <li><a href="index.html" class="hover:text-green-200 transition duration-200 ease-in-out">Home</a></li>
-                    <li><a href="products.html" class="hover:text-green-200 transition duration-200 ease-in-out">Products</a></li>
-                    <li><a href="contact.html" class="hover:text-green-200 transition duration-200 ease-in-out">Contact</a></li>
-                    <!-- External link example -->
-                    <li><a href="https://www.skincancer.org/" target="_blank" rel="noopener noreferrer" class="hover:text-green-200 transition duration-200 ease-in-out">Learn About Skin Health</a></li>
-                </ul>
-            </div>
+            <p id="social-media-prompt" class="text-sm text-gray-600">Follow us on social media for tips and updates!</p>
         </div>
     </footer>
-
 </body>
 </html>
